@@ -1,1 +1,77 @@
-this is for python test.
+ord('A')
+chr(65)
+python 的字符串类型为str,在内存中用unicode表示，一个字符用若干字节表示。如果在网络上传输或保存磁盘，要把str变成字节为单位的bytes.
+x=b'ABC'
+b'ABC'与 'ABC' 的区别
+
+unicode表示的str用encode()转化为指定的bytes
+'ABC'.encode('ascii')
+'中文'.encode('utf-8')   因为中文用ascii放不下
+
+bytes转化成str用decode()
+b'ABC'.decode('ascii')
+b'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
+
+len('abc')
+一个中文字符经utf-8编码后占3个字节
+
+# -*- coding: utf-8 -*-
+另外，编辑环境也必须是utf-8的
+
+####导入实除法模块后的结果为浮点数
+>>> from __future__ import division
+
+#list结构
+person = ['a','b','c']
+len(person)
+person[0];person[-2] == person[1]
+person.insert[i] = 'f'
+person.append['d'] == person.insert[3]='d'
+person.pop()
+person.pop(1)
+person.sort()
+person[0] = 'e'
+group = ['group1', person , 'group2']
+类似数组
+
+
+#tuple结构 内容不可变，除了里面的list可变外
+person = ('a','b')
+person = ('a','b',['x','y']) 
+
+if true:
+    printxxx
+elif true:
+    printxxx
+else:
+    printxxx
+
+
+input() 返回的是str;  int('123');转化成int
+
+for i in person:
+    print i
+
+while n>0 :
+    print n
+    n=n-1
+
+dict = {'a':20, 'b':21}
+if 'b' in dict :
+   print 'yes'
+
+dict.get('a')
+dict.get('a', -1)
+dict.pop('a')
+dict的key中的对象是不可变元素，如字符串 整数等，不可是list
+
+set是一个无重复的集合
+person = set([1,2,3])
+
+字符串可以替换，但本身内容不替换，要赋值给另一个变量
+b = str.replace('a','A')
+
+
+
+
+
